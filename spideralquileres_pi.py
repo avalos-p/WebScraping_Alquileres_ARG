@@ -6,7 +6,7 @@ import datetime
 date = datetime.datetime.now()
 date_formatted = date.strftime("%d-%m-%Y")
 
-class SpideralquileresSpider(scrapy.Spider):
+class SpideralquileresSpider_PI(scrapy.Spider):
     name = "spideralquileres_PI"
     allowed_domains = SITE_FIRST
     start_urls = list(SITE_FIRST_PROVINCES.values())
