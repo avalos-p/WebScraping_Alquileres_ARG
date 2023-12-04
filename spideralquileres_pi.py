@@ -2,6 +2,7 @@ import scrapy
 from config.cfg import SITE_FIRST,SITE_FIRST_PROVINCES
 import datetime
 
+import logging
 
 date = datetime.datetime.now()
 date_formatted = date.strftime("%d-%m-%Y")

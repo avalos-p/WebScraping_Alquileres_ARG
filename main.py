@@ -3,11 +3,18 @@ from scrapy.crawler import CrawlerProcess
 from spideralquileres_ap import SpideralquileresSpider_AP
 from spideralquileres_pi import SpideralquileresSpider_PI
 
-from utils.cleaning import *
+
+from config.cfg import PATH_LOGS,LOG_TASKS,LOG_CFG
+from utils.logger import create_logger_from_file,get_logger
 import pandas as pd
+
+create_logger_from_file(LOG_CFG) # logger from .conf file
+logger = get_logger(LOG_TASKS) # logger name 
+from utils.cleaning import *
 
 
 def run_spiders():
+    logger.debug('Starting scraping.')
     process = CrawlerProcess()
     process.crawl(SpideralquileresSpider_AP)
     process.crawl(SpideralquileresSpider_PI)

@@ -1,11 +1,20 @@
 import pandas as pd
+import logging
 from unidecode import unidecode
 import datetime
+from config.cfg import PATH_CLEARDATA
+
+
+from config.cfg import PATH_LOGS,LOG_TASKS,LOG_CFG
+from utils.logger import create_logger_from_file,get_logger
+create_logger_from_file(LOG_CFG) # logger from .conf file
+logger = get_logger(LOG_TASKS) # logger name 
 
 date = datetime.datetime.now()
 date_formatted = date.strftime("%d-%m-%Y")
 
 def cleaning_letters(column: pd.Series) -> pd.Series:
+    logger.info('Cleaning letters...')
     if not isinstance(column, pd.Series):
         raise ValueError('Error: This function works with pandas series - columns')
     column = column.apply(lambda x: unidecode(x) if pd.notnull(x) else x)
@@ -14,6 +23,7 @@ def cleaning_letters(column: pd.Series) -> pd.Series:
     return column
 
 def keep_numbers_only(column: pd.Series) -> pd.Series:
+    logger.info('Keeping numbers only...')
     if not isinstance(column, pd.Series):
         raise ValueError('Error: This function works with pandas series - columns')
     column = column.apply(lambda x: str(x))  # Changes values to str
@@ -22,6 +32,7 @@ def keep_numbers_only(column: pd.Series) -> pd.Series:
     return column
 
 def number_of_dayss(column: pd.Series) -> pd.Series:
+    logger.info('Changing to number of days...')
     if not isinstance(column, pd.Series):
         raise ValueError('Error: This function works with pandas series - columns')
     
@@ -31,6 +42,7 @@ def number_of_dayss(column: pd.Series) -> pd.Series:
 
 
 def data_cleaner(file: pd.DataFrame) -> pd.DataFrame :
+    logger.info('Cleaning data...')
     if not isinstance(file, pd.DataFrame):
         raise ValueError('Error: File must be pandas DataFrames.')
     file['name'] = cleaning_letters(file['name'])
@@ -47,18 +59,22 @@ def data_cleaner(file: pd.DataFrame) -> pd.DataFrame :
 
 
 def append_data(file1: pd.DataFrame,file2:pd.DataFrame) -> pd.DataFrame :
+    logger.info('Appending data...')
     if not isinstance(file1, pd.DataFrame) or not isinstance(file2, pd.DataFrame):
         raise ValueError('Error: Both files must be pandas DataFrames.')
     #file1 = file1.append(file2, ignore_index=True)
     #file1.to_csv(f'clean_data/alquileres_clean{date_formatted}.csv')
     result = pd.concat([file1, file2], ignore_index=True)
-    result.to_csv(f'clean_data/alquileres_clean{date_formatted}.csv')
+    result.to_csv(f'{PATH_CLEARDATA}/alquileres_clean{date_formatted}.csv')
     return result # The idea is to apply this function using old structure
 
 def clean_websites(file: pd.DataFrame) -> pd.DataFrame :
+    logger.info('Websites removing...')
     if not isinstance(file, pd.DataFrame):
         raise ValueError('Error: File must be pandas DataFrames.')
     file = file.drop(columns=['site'])
-    file.to_csv(f'clean_data/alquileres_clean{date_formatted}.csv')
+    file.to_csv(f'{PATH_CLEARDATA}/alquileres_clean{date_formatted}.csv')
     return  # Important to NOT run this function, this is just for sharing data purposes 
     
+
+

@@ -12,10 +12,10 @@ DB_NAME = config('DB_NAME')
 
 # Directory
 ROOT = Path().resolve().parent
-ROOT_CSV = os.path.join(ROOT, 'alquileres/csv')
-ROOT_DB = os.path.join(ROOT, 'alquileres/db')
-ROOT_CLEARDATA = os.path.join(ROOT, 'alquileres/clear_data')
-ROOT_LOGS = os.path.join(ROOT, 'alquileres/logs')
+PATH_CSV = os.path.join(ROOT, 'alquileres/csv')
+PATH_DB = os.path.join(ROOT, 'alquileres/db')
+PATH_CLEARDATA = os.path.join(ROOT, 'alquileres/clean_data')
+PATH_LOGS = os.path.join(ROOT, 'alquileres/logs')
 
 # Scraping
 SITE_FIRST = ["parairnos.com"] # Site
@@ -26,7 +26,9 @@ SITE_SECOND = ["argenprop.com"] # Site
 SITE_SECOND_PROVINCES = {"cordoba":"https://www.argenprop.com/departamentos/alquiler-temporal/cordoba",
                          "mendoza":"https://www.argenprop.com/departamentos/alquiler-temporal/mendoza-arg",
                          "buenos-aires":"https://www.argenprop.com/departamentos/alquiler-temporal/buenos-aires"}
+                         
+                         
 # Loggers
 #LOG_DB = 'Dbconnection' # to do
-#LOG_ETL = 'ETLTasks' # to do
-#LOG_CFG = 'logging.conf' # to do
+LOG_TASKS = 'Tasks' # Name of logger
+LOG_CFG = 'logging.conf' # Name of conf file

@@ -2,6 +2,7 @@ import scrapy
 from config.cfg import SITE_SECOND,SITE_SECOND_PROVINCES
 import datetime
 
+import logging
 
 date = datetime.datetime.now()
 date_formatted = date.strftime("%d-%m-%Y")
@@ -10,7 +11,7 @@ class SpideralquileresSpider_AP(scrapy.Spider):
     name = "spideralquileres_AP"
     allowed_domains = SITE_SECOND # calling sites from cfg 
     start_urls = list(SITE_SECOND_PROVINCES.values()) #
-
+    
     custom_settings = {
     'FEED_FORMAT': 'csv',
     'FEED_URI': f'csv/alquileres_ap{date_formatted}.csv' # saving raw data
