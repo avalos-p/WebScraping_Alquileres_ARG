@@ -12,6 +12,9 @@ create_logger_from_file(LOG_CFG) # logger from .conf file
 logger = get_logger(LOG_TASKS) # logger name 
 from utils.cleaning import *
 
+import datetime
+date = datetime.datetime.now()
+date_formatted = date.strftime("%d-%m-%Y")
 
 def run_spiders():
     logger.debug('Starting scraping.')
@@ -25,10 +28,10 @@ if __name__ == "__main__":
     run_spiders()
 
     # code for cleaning
-    file1 = pd.read_csv('csv/alquileres_ap25-11-2023.csv')
+    file1 = pd.read_csv(f'csv/alquileres_ap{date_formatted}.csv')
     file1 = data_cleaner(file1)
     
-    file2 = pd.read_csv('csv/alquileres_25-11-2023.csv')
+    file2 = pd.read_csv(f'csv/alquileres_pi{date_formatted}.csv')
     file2 = data_cleaner(file2)
 
     newfile = append_data(file1, file2)

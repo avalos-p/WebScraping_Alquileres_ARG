@@ -14,7 +14,7 @@ class SpideralquileresSpider_PI(scrapy.Spider):
 
     custom_settings = {
     'FEED_FORMAT': 'csv',
-    'FEED_URI': f'csv/alquileres_{date_formatted}.csv'# saving raw data
+    'FEED_URI': f'csv/alquileres_pi{date_formatted}.csv'# saving raw data
     }
     
 
