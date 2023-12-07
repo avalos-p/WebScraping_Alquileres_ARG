@@ -1,7 +1,7 @@
 import scrapy
 from scrapy.crawler import CrawlerProcess
-from spideralquileres_ap import SpideralquileresSpider_AP
-from spideralquileres_pi import SpideralquileresSpider_PI
+from utils.spideralquileres_ap import SpideralquileresSpider_AP
+from utils.spideralquileres_pi import SpideralquileresSpider_PI
 
 
 from config.cfg import PATH_LOGS,LOG_TASKS,LOG_CFG
@@ -28,12 +28,12 @@ if __name__ == "__main__":
     run_spiders()
 
     # code for cleaning
-    file1 = pd.read_csv(f'csv/alquileres_ap{date_formatted}.csv')
-    file1 = data_cleaner(file1)
+    argenprop_data = pd.read_csv(f'csv/alquileres_ap{date_formatted}.csv')
+    argenprop_data = data_cleaner(argenprop_data)
     
-    file2 = pd.read_csv(f'csv/alquileres_pi{date_formatted}.csv')
-    file2 = data_cleaner(file2)
+    parairnos_data = pd.read_csv(f'csv/alquileres_pi{date_formatted}.csv')
+    parairnos_data = data_cleaner(parairnos_data)
 
-    newfile = append_data(file1, file2)
+    results = append_data(argenprop_data, parairnos_data)
 
 
