@@ -18,15 +18,15 @@ PATH_CLEARDATA = os.path.join(ROOT, 'alquileres/clean_data')
 PATH_LOGS = os.path.join(ROOT, 'alquileres/logs')
 
 # Scraping
-SITE_FIRST = ["parairnos.com"] # Site
-SITE_FIRST_PROVINCES = {"cordoba":"https://www.parairnos.com/alquileres-en-cordoba",
+PARAIRNOS_WEBSITE = ["parairnos.com"] # Site
+PARAIRNOS_PROVINCES = {"cordoba":"https://www.parairnos.com/alquileres-en-cordoba",
                        "buenos-aires":"https://www.parairnos.com/alquileres-en-buenos-aires",
                        "mendoza":"https://www.parairnos.com/alquileres-en-mendoza"} # List of sub-sites
-SITE_SECOND = ["argenprop.com"] # Site
-SITE_SECOND_PROVINCES = {"cordoba":"https://www.argenprop.com/departamentos/alquiler-temporal/cordoba",
+ARGENPROP_WEBSITE = ["argenprop.com"] # Site
+ARGENPROP_PROVINCES = {"cordoba":"https://www.argenprop.com/departamentos/alquiler-temporal/cordoba",
                          "mendoza":"https://www.argenprop.com/departamentos/alquiler-temporal/mendoza-arg",
                          "buenos-aires":"https://www.argenprop.com/departamentos/alquiler-temporal/buenos-aires"}
-                         
+                                        
                          
 # Loggers
 #LOG_DB = 'Dbconnection' # to do
