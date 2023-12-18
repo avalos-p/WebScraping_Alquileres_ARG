@@ -1,0 +1,101 @@
+,Unnamed: 0,name,price,days,rooms,bathrooms,capacity,date,province
+0,0,aristides villanueva 200,350000.0,,,,,18-12-2023,mendoza
+1,1,dr n avellaneda 100,70.0,,,1.0,,18-12-2023,mendoza
+2,2,alpatacal 1200,75.0,,1.0,,,18-12-2023,mendoza
+3,3,aristides villanueva 200,550000.0,,1.0,,,18-12-2023,mendoza
+4,4,almirate brown y maipu,32000.0,,2.0,2.0,,18-12-2023,mendoza
+5,5,av espana 900,,,2.0,,,18-12-2023,mendoza
+6,6,alsina y aconcagua,,,2.0,,,18-12-2023,mendoza
+7,7,peatonal sarmiento,,,3.0,,,18-12-2023,mendoza
+8,8,zapiola y pueyrredon,,,2.0,1.0,,18-12-2023,mendoza
+9,9,perito moreno y vergara,,,1.0,,,18-12-2023,mendoza
+10,10,consultar direccion,130000.0,,2.0,1.0,,18-12-2023,mendoza
+11,11,olascoaga,,,2.0,,,18-12-2023,mendoza
+12,12,avenida colon,500000.0,,3.0,,,18-12-2023,mendoza
+13,13,guaymallen,,,2.0,1.0,,18-12-2023,mendoza
+14,14,villa nueva,,,2.0,1.0,,18-12-2023,mendoza
+15,15,azcuenaga godoy cruz mendoza,,,,,,18-12-2023,mendoza
+16,16,godoy cruz,,,1.0,,,18-12-2023,mendoza
+17,17,mariano moreno 900,35.0,,2.0,1.0,,18-12-2023,mendoza
+18,18,calle la plata,,,2.0,1.0,,18-12-2023,mendoza
+19,19,godoy cruz,,,1.0,1.0,,18-12-2023,mendoza
+20,20,jujuy 200,280000.0,,1.0,1.0,,18-12-2023,cordoba
+21,21,gral paz 100 piso 9,380000.0,,2.0,2.0,,18-12-2023,cordoba
+22,22,bv mitre 500,18000.0,,1.0,,,18-12-2023,cordoba
+23,23,santiago derqui 100,400000.0,,2.0,2.0,,18-12-2023,cordoba
+24,24,santiago derqui 100,26000.0,,2.0,,,18-12-2023,cordoba
+25,25,bv san juan 600,18000.0,,1.0,,,18-12-2023,cordoba
+26,26,dr achaval rodriguez 100,18000.0,,1.0,,,18-12-2023,cordoba
+27,27,pres santiago derqui 100,20000.0,,1.0,,,18-12-2023,cordoba
+28,28,buenos aires 500,20000.0,,1.0,,,18-12-2023,cordoba
+29,29,dr achaval rodriguez 100,270000.0,,1.0,,,18-12-2023,cordoba
+30,30,pres santiago derqui 100,300000.0,,1.0,,,18-12-2023,cordoba
+31,31,buenos aires 500,300000.0,,1.0,,,18-12-2023,cordoba
+32,32,la rioja  300 300,100.0,,2.0,1.0,,18-12-2023,cordoba
+33,33,bv arturo illia 400,250000.0,,1.0,1.0,,18-12-2023,cordoba
+34,34,rondeau 500,20000.0,,1.0,,,18-12-2023,cordoba
+35,35,carcano 600 piso 1,10000.0,,1.0,1.0,,18-12-2023,cordoba
+36,36,bv poniente umberto arturo illia 400,18000.0,,1.0,1.0,,18-12-2023,cordoba
+37,37,belgrano 100,250000.0,,1.0,1.0,,18-12-2023,cordoba
+38,38,27 de abril 200,300.0,,1.0,,,18-12-2023,cordoba
+39,39,25 de mayo 1100 piso 3,345000.0,,2.0,,,18-12-2023,cordoba
+40,40,alberdi 2300 piso 20,,,2.0,1.0,,18-12-2023,buenos-aires
+41,41,av costanera 3000,55.0,,1.0,1.0,,18-12-2023,buenos-aires
+42,42,avenida colon 2200 piso 1,55000.0,,2.0,,,18-12-2023,buenos-aires
+43,43,querini 100 piso 12,230000.0,,1.0,1.0,,18-12-2023,buenos-aires
+44,44,s urquia 2400 piso 7,11111111.0,,1.0,1.0,,18-12-2023,buenos-aires
+45,45,av espora 1400,90.0,,1.0,,,18-12-2023,buenos-aires
+46,46,constitucion 300 piso 9,,,2.0,1.0,,18-12-2023,buenos-aires
+47,47,11 septiembre 2700 piso 1,39000.0,,1.0,1.0,,18-12-2023,buenos-aires
+48,48,avenida arquitecto jorge bunge 1600 piso 2,500.0,,1.0,1.0,,18-12-2023,buenos-aires
+49,49,gral juan arenales 2100,32000.0,,2.0,,,18-12-2023,buenos-aires
+50,50,av independencia 1100 piso 7,,,,,,18-12-2023,buenos-aires
+51,51,falucho 100 piso 11,130.0,,5.0,,,18-12-2023,buenos-aires
+52,52,jason 300 piso 4,900.0,,2.0,1.0,,18-12-2023,buenos-aires
+53,53,las dunas 700 piso 1,250.0,,2.0,1.0,,18-12-2023,buenos-aires
+54,54,paseo 105 100,45000.0,,1.0,,,18-12-2023,buenos-aires
+55,55,de las tijeretas 700 piso 2,1200.0,,3.0,2.0,,18-12-2023,buenos-aires
+56,56,libres del sud,50000.0,,2.0,,,18-12-2023,buenos-aires
+57,57,calle 32 100,87.0,,2.0,,,18-12-2023,buenos-aires
+58,58,entre rios 2400 piso 1,,,,1.0,,18-12-2023,buenos-aires
+59,59,j c chiozza 2600 piso 10,35000.0,,1.0,,,18-12-2023,buenos-aires
+60,60,pres m quintana 300,190000.0,,1.0,1.0,,18-12-2023,mendoza
+61,61,godoy cruz,,,1.0,,,18-12-2023,mendoza
+62,62,mariano moreno 900,35.0,,2.0,1.0,,18-12-2023,mendoza
+63,63,calle la plata,,,2.0,1.0,,18-12-2023,mendoza
+64,64,godoy cruz,,,1.0,1.0,,18-12-2023,mendoza
+65,65,huarpes 300,,,2.0,,,18-12-2023,mendoza
+66,66,espana 2300,,,2.0,,,18-12-2023,mendoza
+67,67,pueyrredon 400,,,1.0,,,18-12-2023,mendoza
+68,68,carlos pellegrini 700,,,,1.0,,18-12-2023,mendoza
+69,69,olascoaga 2800,35.0,,1.0,,,18-12-2023,mendoza
+70,70,vucetich 2900,,,2.0,,,18-12-2023,mendoza
+71,71,aristobulo del valle 800,,,2.0,,,18-12-2023,mendoza
+72,72,vucetich juan 3000,30.0,,2.0,,,18-12-2023,mendoza
+73,73,las lomas 0,3000000.0,,3.0,,,18-12-2023,mendoza
+74,74,francisco moyano 1500,700.0,,2.0,,,18-12-2023,mendoza
+75,75,espana 2800,280000.0,,2.0,,,18-12-2023,mendoza
+76,76,chile 2400,250000.0,,3.0,,,18-12-2023,mendoza
+77,77,mitre 600,260000.0,,1.0,,,18-12-2023,mendoza
+78,78,figueroa alcorta 1900,,,1.0,,,18-12-2023,mendoza
+79,79,san juan 1400,220000.0,,2.0,,,18-12-2023,mendoza
+80,80,calle 32 100,87.0,,2.0,,,18-12-2023,buenos-aires
+81,81,martin y omar 100 piso 1,350000.0,,1.0,,,18-12-2023,buenos-aires
+82,82,entre rios 2400 piso 1,,,,1.0,,18-12-2023,buenos-aires
+83,83,velez sarsfield 4600 piso 1,150000.0,,1.0,1.0,,18-12-2023,buenos-aires
+84,84,j c chiozza 2600 piso 10,35000.0,,1.0,,,18-12-2023,buenos-aires
+85,85,las heras 2500 piso 1,,,,,,18-12-2023,buenos-aires
+86,86,bolivar 1300,,,1.0,,,18-12-2023,buenos-aires
+87,87,maipu 3200 piso 1,45000.0,,2.0,,,18-12-2023,buenos-aires
+88,88,corrientes 300,,,1.0,,,18-12-2023,buenos-aires
+89,89,de la tijereta 700 piso 2,,,3.0,,,18-12-2023,buenos-aires
+90,90,pasaje del caminante y del portal 100 piso 6,,,1.0,,,18-12-2023,buenos-aires
+91,91,corrientes 1400,900000.0,,2.0,,,18-12-2023,buenos-aires
+92,92,avenida del libertador 2800 piso 10,,,1.0,,,18-12-2023,buenos-aires
+93,93,corrientes 1400,1000000.0,,2.0,,,18-12-2023,buenos-aires
+94,94,avenida bartolome mitre 2700 piso pb,,,2.0,2.0,,18-12-2023,buenos-aires
+95,95,avenida 1 4500,,,2.0,,,18-12-2023,buenos-aires
+96,96,corrientes al 1900,45500.0,,1.0,,,18-12-2023,buenos-aires
+97,97,moreno al 2100,35000.0,,2.0,,,18-12-2023,buenos-aires
+98,98,velez sarsfield 6300,157000.0,,,,,18-12-2023,buenos-aires
+99,99,santiago del estero al 2300,22000.0,,,1.0,,18-12-2023,buenos-aires
