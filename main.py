@@ -5,7 +5,6 @@ import datetime
 
 from config.cfg import PATH_LOGS,LOG_TASKS,LOG_CFG
 
-
 from utils.spideralquileres_ap import SpideralquileresSpider_AP
 from utils.spideralquileres_pi import SpideralquileresSpider_PI
 from utils.logger import create_logger_from_file, get_logger
@@ -15,6 +14,7 @@ from utils.cleaning import *
 create_logger_from_file(LOG_CFG) # Logger from .conf file
 logger = get_logger(LOG_TASKS) # Logger name 
 
+test=test
 
 
 date = datetime.datetime.now()
