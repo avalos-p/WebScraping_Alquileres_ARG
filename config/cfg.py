@@ -11,21 +11,29 @@ DB_PORT = config('DB_PORT')
 DB_NAME = config('DB_NAME')
 
 # Directory
-ROOT = Path().resolve().parent
-PATH_CSV = os.path.join(ROOT, 'alquileres/csv')
-PATH_DB = os.path.join(ROOT, 'alquileres/db')
-PATH_CLEARDATA = os.path.join(ROOT, 'alquileres/clean_data')
-PATH_LOGS = os.path.join(ROOT, 'alquileres/logs')
+#ROOT = Path().resolve().parent
+ROOT = os.path.abspath(os.path.dirname(__file__))
+ROOT = os.path.dirname(ROOT)
+
+PATH_CSV = os.path.join(ROOT, 'csv')
+PATH_DB = os.path.join(ROOT, 'db')
+PATH_CLEARDATA = os.path.join(ROOT, 'clean_data')
+PATH_LOGS = os.path.join(ROOT, 'logs')
 
 # Scraping
 PARAIRNOS_WEBSITE = ["parairnos.com"] # Site
-PARAIRNOS_PROVINCES = {"cordoba":"https://www.parairnos.com/alquileres-en-cordoba",
-                       "buenos-aires":"https://www.parairnos.com/alquileres-en-buenos-aires",
-                       "mendoza":"https://www.parairnos.com/alquileres-en-mendoza"} # List of sub-sites
 ARGENPROP_WEBSITE = ["argenprop.com"] # Site
-ARGENPROP_PROVINCES = {"cordoba":"https://www.argenprop.com/departamentos/alquiler-temporal/cordoba",
-                         "mendoza":"https://www.argenprop.com/departamentos/alquiler-temporal/mendoza-arg",
-                         "buenos-aires":"https://www.argenprop.com/departamentos/alquiler-temporal/buenos-aires"}
+
+PARAIRNOS_PROVINCES = {"mendoza":"https://www.parairnos.com/alquileres-en-mendoza"} # List of sub-sites
+ARGENPROP_PROVINCES = {"mendoza":"https://www.argenprop.com/departamentos/alquiler-temporal/mendoza-arg"}
+
+
+#PARAIRNOS_PROVINCES = {"cordoba":"https://www.parairnos.com/alquileres-en-cordoba",
+#                       "buenos-aires":"https://www.parairnos.com/alquileres-en-buenos-aires",
+#                       "mendoza":"https://www.parairnos.com/alquileres-en-mendoza"} # List of sub-sites
+#ARGENPROP_PROVINCES = {"cordoba":"https://www.argenprop.com/departamentos/alquiler-temporal/cordoba",
+#                         "mendoza":"https://www.argenprop.com/departamentos/alquiler-temporal/mendoza-arg",
+#                        "buenos-aires":"https://www.argenprop.com/departamentos/alquiler-temporal/buenos-aires"}
                                         
 
 

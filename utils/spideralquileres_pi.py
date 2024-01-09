@@ -1,5 +1,5 @@
 import scrapy
-from config.cfg import PARAIRNOS_WEBSITE,PARAIRNOS_PROVINCES
+from config.cfg import PARAIRNOS_WEBSITE,PARAIRNOS_PROVINCES,PATH_CSV
 import datetime
 
 import logging
@@ -15,7 +15,7 @@ class SpideralquileresSpider_PI(scrapy.Spider):
 
     custom_settings = {
     'FEED_FORMAT': 'csv',
-    'FEED_URI': f'csv/alquileres_pi{date_formatted}.csv'# saving raw data
+    'FEED_URI': f'{PATH_CSV}/alquileres_pi{date_formatted}.csv'# saving raw data
     }
     
 

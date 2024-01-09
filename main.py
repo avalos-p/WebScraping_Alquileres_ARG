@@ -3,7 +3,7 @@ from scrapy.crawler import CrawlerProcess
 import pandas as pd
 import datetime
 
-from config.cfg import PATH_LOGS,LOG_TASKS,LOG_CFG
+from config.cfg import PATH_LOGS,LOG_TASKS,LOG_CFG,PATH_CSV
 
 from utils.spideralquileres_ap import SpideralquileresSpider_AP
 from utils.spideralquileres_pi import SpideralquileresSpider_PI
@@ -30,10 +30,10 @@ if __name__ == "__main__":
     run_spiders()
 
     # Code for cleaning
-    argenprop_data = pd.read_csv(f'csv/alquileres_ap{date_formatted}.csv')
+    argenprop_data = pd.read_csv(f'{PATH_CSV}/alquileres_ap{date_formatted}.csv')
     argenprop_data = data_cleaner(argenprop_data)
     
-    parairnos_data = pd.read_csv(f'csv/alquileres_pi{date_formatted}.csv')
+    parairnos_data = pd.read_csv(f'{PATH_CSV}/alquileres_pi{date_formatted}.csv')
     parairnos_data = data_cleaner(parairnos_data)
 
     results = append_data(argenprop_data, parairnos_data)
