@@ -24,16 +24,13 @@ PATH_LOGS = os.path.join(ROOT, 'logs')
 PARAIRNOS_WEBSITE = ["parairnos.com"] # Site
 ARGENPROP_WEBSITE = ["argenprop.com"] # Site
 
-PARAIRNOS_PROVINCES = {"mendoza":"https://www.parairnos.com/alquileres-en-mendoza"} # List of sub-sites
-ARGENPROP_PROVINCES = {"mendoza":"https://www.argenprop.com/departamentos/alquiler-temporal/mendoza-arg"}
 
-
-#PARAIRNOS_PROVINCES = {"cordoba":"https://www.parairnos.com/alquileres-en-cordoba",
-#                       "buenos-aires":"https://www.parairnos.com/alquileres-en-buenos-aires",
-#                       "mendoza":"https://www.parairnos.com/alquileres-en-mendoza"} # List of sub-sites
-#ARGENPROP_PROVINCES = {"cordoba":"https://www.argenprop.com/departamentos/alquiler-temporal/cordoba",
-#                         "mendoza":"https://www.argenprop.com/departamentos/alquiler-temporal/mendoza-arg",
-#                        "buenos-aires":"https://www.argenprop.com/departamentos/alquiler-temporal/buenos-aires"}
+PARAIRNOS_PROVINCES = {"cordoba":"https://www.parairnos.com/alquileres-en-cordoba",
+                       "buenos-aires":"https://www.parairnos.com/alquileres-en-buenos-aires",
+                       "mendoza":"https://www.parairnos.com/alquileres-en-mendoza"} # List of sub-sites
+ARGENPROP_PROVINCES = {"cordoba":"https://www.argenprop.com/departamentos/alquiler-temporal/cordoba",
+                         "mendoza":"https://www.argenprop.com/departamentos/alquiler-temporal/mendoza-arg",
+                        "buenos-aires":"https://www.argenprop.com/departamentos/alquiler-temporal/buenos-aires"}
                                         
 
 
