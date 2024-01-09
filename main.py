@@ -13,7 +13,7 @@ from utils.logger import create_logger_from_file, get_logger
 from utils.utils import *
 from utils.cleaning import *
 
-create_logger_from_file(LOG_CFG) # Logger from .conf file
+create_logger_from_file(LOG_CFG) # Logger from .conf file.
 logger = get_logger(LOG_TASKS) # Logger name 
 
 
