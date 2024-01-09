@@ -11,6 +11,7 @@ class SpideralquileresSpider_PI(scrapy.Spider):
     name = "spideralquileres_PI"
     allowed_domains = PARAIRNOS_WEBSITE
     start_urls = list(PARAIRNOS_PROVINCES.values())
+    
 
     custom_settings = {
     'FEED_FORMAT': 'csv',

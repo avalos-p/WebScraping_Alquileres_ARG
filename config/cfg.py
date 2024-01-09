@@ -3,7 +3,7 @@ from decouple import config
 from pathlib import Path
 
 
-# Database Information # working with .env
+# Database Information # working with .env.
 DB_USER = config('DB_USER')  
 DB_PASS = config('DB_PASS')
 DB_HOST = config('DB_HOST')
@@ -27,7 +27,8 @@ ARGENPROP_PROVINCES = {"cordoba":"https://www.argenprop.com/departamentos/alquil
                          "mendoza":"https://www.argenprop.com/departamentos/alquiler-temporal/mendoza-arg",
                          "buenos-aires":"https://www.argenprop.com/departamentos/alquiler-temporal/buenos-aires"}
                                         
-                         
+
+
 # Loggers
 #LOG_DB = 'Dbconnection' # to do
 LOG_TASKS = 'Tasks' # Name of logger

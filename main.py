@@ -14,8 +14,6 @@ from utils.cleaning import *
 create_logger_from_file(LOG_CFG) # Logger from .conf file
 logger = get_logger(LOG_TASKS) # Logger name 
 
-test=test
-
 
 date = datetime.datetime.now()
 date_formatted = date.strftime("%d-%m-%Y")
