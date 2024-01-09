@@ -10,7 +10,8 @@ date_formatted = date.strftime("%d-%m-%Y")
 class SpideralquileresSpider_AP(scrapy.Spider):
     name = "spideralquileres_AP"
     allowed_domains = ARGENPROP_WEBSITE # calling sites from cfg 
-    start_urls = list(ARGENPROP_PROVINCES.values()) #
+    start_urls = list(ARGENPROP_PROVINCES.values()) 
+    
     
     custom_settings = {
     'FEED_FORMAT': 'csv',

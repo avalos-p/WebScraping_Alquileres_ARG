@@ -5,6 +5,11 @@ from scrapy.crawler import CrawlerProcess
 import pandas as pd
 import datetime
 
+<<<<<<< HEAD
+=======
+from config.cfg import PATH_LOGS,LOG_TASKS,LOG_CFG,PATH_CSV
+
+>>>>>>> task/database
 from utils.spideralquileres_ap import SpideralquileresSpider_AP
 from utils.spideralquileres_pi import SpideralquileresSpider_PI
 from utils.logger import create_logger_from_file, get_logger
