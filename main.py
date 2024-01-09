@@ -5,8 +5,6 @@ from scrapy.crawler import CrawlerProcess
 import pandas as pd
 import datetime
 
-
-
 from utils.spideralquileres_ap import SpideralquileresSpider_AP
 from utils.spideralquileres_pi import SpideralquileresSpider_PI
 from utils.logger import create_logger_from_file, get_logger

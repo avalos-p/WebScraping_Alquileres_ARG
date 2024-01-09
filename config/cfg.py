@@ -2,7 +2,6 @@ import os
 from decouple import config
 from pathlib import Path
 
-
 # Database Information # working with .env
 DB_USER = config('DB_USER')  
 DB_PASS = config('DB_PASS')
@@ -16,6 +15,7 @@ ROOT = os.path.abspath(os.path.dirname(__file__))
 ROOT = os.path.dirname(ROOT)
 PATH_CSV = os.path.join(ROOT, 'csv')
 PATH_CSV = os.path.abspath(PATH_CSV)
+
 #PATH_CSV = os.path.join(ROOT, 'alquileres/csv')
 #ROOT = os.path.abspath(os.path.dirname(__file__))
 
@@ -37,6 +37,7 @@ ARGENPROP_PROVINCES = {"cordoba":"https://www.argenprop.com/departamentos/alquil
                                         
                          
 # Loggers
+
 #LOG_DB = 'Dbconnection' # to do
 LOG_TASKS = 'Tasks' # Name of logger
 LOG_CFG = 'logging.conf' # Name of conf file
