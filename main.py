@@ -1,9 +1,10 @@
+from config.cfg import PATH_LOGS,PATH_CSV,LOG_TASKS,LOG_CFG
+
 import scrapy
 from scrapy.crawler import CrawlerProcess
 import pandas as pd
 import datetime
 
-from config.cfg import PATH_LOGS,LOG_TASKS,LOG_CFG
 
 
 from utils.spideralquileres_ap import SpideralquileresSpider_AP
@@ -14,7 +15,6 @@ from utils.cleaning import *
 
 create_logger_from_file(LOG_CFG) # Logger from .conf file
 logger = get_logger(LOG_TASKS) # Logger name 
-
 
 
 date = datetime.datetime.now()
@@ -32,10 +32,10 @@ if __name__ == "__main__":
     run_spiders()
 
     # Code for cleaning
-    argenprop_data = pd.read_csv(f'csv/alquileres_ap{date_formatted}.csv')
+    argenprop_data = pd.read_csv(f'{PATH_CSV}/alquileres_ap{date_formatted}.csv')
     argenprop_data = data_cleaner(argenprop_data)
     
-    parairnos_data = pd.read_csv(f'csv/alquileres_pi{date_formatted}.csv')
+    parairnos_data = pd.read_csv(f'{PATH_CSV}/alquileres_pi{date_formatted}.csv')
     parairnos_data = data_cleaner(parairnos_data)
 
     results = append_data(argenprop_data, parairnos_data)
