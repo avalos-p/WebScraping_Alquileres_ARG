@@ -4,7 +4,10 @@ from pathlib import Path
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Database Information # working with .env
+=======
+>>>>>>> task/database
 =======
 >>>>>>> task/database
 =======
@@ -20,6 +23,7 @@ DB_NAME = config('DB_NAME')
 # Directory
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #ROOT = Path(__file__).resolve().parent.parent
 ROOT = os.path.abspath(os.path.dirname(__file__))
 ROOT = os.path.dirname(ROOT)
@@ -29,6 +33,8 @@ PATH_CSV = os.path.abspath(PATH_CSV)
 #PATH_CSV = os.path.join(ROOT, 'alquileres/csv')
 #ROOT = os.path.abspath(os.path.dirname(__file__))
 
+=======
+>>>>>>> task/database
 =======
 >>>>>>> task/database
 =======
@@ -46,6 +52,11 @@ PATH_LOGS = os.path.join(ROOT, 'logs')
 PARAIRNOS_WEBSITE = ["parairnos.com"] # Site
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ARGENPROP_WEBSITE = ["argenprop.com"] # Site
+
+>>>>>>> task/database
 =======
 ARGENPROP_WEBSITE = ["argenprop.com"] # Site
 
@@ -60,8 +71,11 @@ PARAIRNOS_PROVINCES = {"cordoba":"https://www.parairnos.com/alquileres-en-cordob
                        "mendoza":"https://www.parairnos.com/alquileres-en-mendoza"} # List of sub-sites
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARGENPROP_WEBSITE = ["argenprop.com"] # Site
 
+=======
+>>>>>>> task/database
 =======
 >>>>>>> task/database
 =======
