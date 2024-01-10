@@ -2,17 +2,6 @@ import os
 from decouple import config
 from pathlib import Path
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Database Information # working with .env
-=======
->>>>>>> task/database
-=======
->>>>>>> task/database
-=======
->>>>>>> task/database
-
 # Database Information # working with .env.
 DB_USER = config('DB_USER')  
 DB_PASS = config('DB_PASS')
@@ -21,25 +10,14 @@ DB_PORT = config('DB_PORT')
 DB_NAME = config('DB_NAME')
 
 # Directory
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 #ROOT = Path(__file__).resolve().parent.parent
 ROOT = os.path.abspath(os.path.dirname(__file__))
 ROOT = os.path.dirname(ROOT)
 PATH_CSV = os.path.join(ROOT, 'csv')
 PATH_CSV = os.path.abspath(PATH_CSV)
 
-#PATH_CSV = os.path.join(ROOT, 'alquileres/csv')
-#ROOT = os.path.abspath(os.path.dirname(__file__))
 
-=======
->>>>>>> task/database
-=======
->>>>>>> task/database
-=======
->>>>>>> task/database
-#ROOT = Path().resolve().parent
 ROOT = os.path.abspath(os.path.dirname(__file__))
 ROOT = os.path.dirname(ROOT)
 
@@ -50,36 +28,13 @@ PATH_LOGS = os.path.join(ROOT, 'logs')
 
 # Scraping
 PARAIRNOS_WEBSITE = ["parairnos.com"] # Site
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-ARGENPROP_WEBSITE = ["argenprop.com"] # Site
 
->>>>>>> task/database
-=======
 ARGENPROP_WEBSITE = ["argenprop.com"] # Site
-
->>>>>>> task/database
-=======
-ARGENPROP_WEBSITE = ["argenprop.com"] # Site
-
->>>>>>> task/database
 
 PARAIRNOS_PROVINCES = {"cordoba":"https://www.parairnos.com/alquileres-en-cordoba",
                        "buenos-aires":"https://www.parairnos.com/alquileres-en-buenos-aires",
                        "mendoza":"https://www.parairnos.com/alquileres-en-mendoza"} # List of sub-sites
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-ARGENPROP_WEBSITE = ["argenprop.com"] # Site
 
-=======
->>>>>>> task/database
-=======
->>>>>>> task/database
-=======
->>>>>>> task/database
 ARGENPROP_PROVINCES = {"cordoba":"https://www.argenprop.com/departamentos/alquiler-temporal/cordoba",
                          "mendoza":"https://www.argenprop.com/departamentos/alquiler-temporal/mendoza-arg",
                         "buenos-aires":"https://www.argenprop.com/departamentos/alquiler-temporal/buenos-aires"}
