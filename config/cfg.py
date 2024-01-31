@@ -33,16 +33,29 @@ ARGENPROP_WEBSITE = ["argenprop.com"] # Site
 
 PARAIRNOS_PROVINCES = {"cordoba":"https://www.parairnos.com/alquileres-en-cordoba",
                        "buenos-aires":"https://www.parairnos.com/alquileres-en-buenos-aires",
-                       "mendoza":"https://www.parairnos.com/alquileres-en-mendoza"} # List of sub-sites
+                       "mendoza":"https://www.parairnos.com/alquileres-en-mendoza",
+		       "mar-del-plata":"https://www.parairnos.com/alquileres-en-mar-del-plata",
+		       "rosario":"https://www.parairnos.com/alquileres-en-rosario",
+		       "bariloche":"https://www.parairnos.com/alquileres-en-bariloche",
+		       "misiones":"https://www.parairnos.com/alquileres-en-misiones",
+		       "salta":"https://www.parairnos.com/alquileres-en-salta",
+		       "tucuman":"https://www.parairnos.com/alquileres-en-tucuman",
+		       "corrientes":"https://www.parairnos.com/alquileres-en-corrientes"} # List of sub-sites
 
 ARGENPROP_PROVINCES = {"cordoba":"https://www.argenprop.com/departamentos/alquiler-temporal/cordoba",
                          "mendoza":"https://www.argenprop.com/departamentos/alquiler-temporal/mendoza-arg",
-                        "buenos-aires":"https://www.argenprop.com/departamentos/alquiler-temporal/buenos-aires"}
+                        "buenos-aires":"https://www.argenprop.com/departamentos/alquiler-temporal/buenos-aires",
+			"mar-del-plata":"https://www.argenprop.com/departamentos/alquiler/mar-del-plata",
+                        "rosario":"https://www.argenprop.com/departamentos/alquiler/rosario",
+                        "bariloche":"https://www.argenprop.com/departamentos/alquiler/bariloche",
+                        "misiones":"https://www.argenprop.com/departamentos/alquiler/misiones",
+                        "salta":"https://www.argenprop.com/departamentos/alquiler/salta",
+                       "tucuman":"https://www.argenprop.com/departamentos/alquiler/tucuman",
+                       "corrientes":"https://www.argenprop.com/departamentos/alquiler/corrientes"}
                                         
 
 
 # Loggers
 
-#LOG_DB = 'Dbconnection' # to do
 LOG_TASKS = 'Tasks' # Name of logger
 LOG_CFG = 'logging.conf' # Name of conf file
