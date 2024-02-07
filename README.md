@@ -4,6 +4,10 @@
 <td>
   Este proyecto tiene como objetivo obtener datos sobre alquileres de distintas páginas web en Argentina usando Python.
   
+  Para acceder a la base de datos recolectados:  
+  
+  [![Kaggle](https://img.shields.io/badge/-Kaggle-000000?style=flat&logo=Kaggle)](https://www.kaggle.com/datasets/avalospabloa/argenrentdata)
+  
 </td>
 </tr>
 </table>
@@ -25,11 +29,16 @@ Para configurar el entorno de desarrollo, sigue los siguientes pasos:
 
 #### Actualizado 4 de Febrero de 2024 #####
 
-# Rental Data Scraping
+# Apartment rental Data Scraping
 <table>
 <tr>
 <td>
   This project aims to collect data about rentals from various websites in Argentina using Python.
+
+  To access the collected database:
+  
+   [![Kaggle](https://img.shields.io/badge/-Kaggle-000000?style=flat&logo=Kaggle)](https://www.kaggle.com/datasets/avalospabloa/argenrentdata)
+  
   
 </td>
 </tr>
