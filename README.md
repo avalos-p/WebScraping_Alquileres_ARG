@@ -27,7 +27,6 @@ Para configurar el entorno de desarrollo, sigue los siguientes pasos:
 - Ejecuta `main.py`, esto realizará el scraping, la limpieza y la carga de datos.
 
 
-#### Actualizado 4 de Febrero de 2024 #####
 
 # Apartment rental Data Scraping
 <table>
