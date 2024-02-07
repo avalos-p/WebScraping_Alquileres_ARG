@@ -104,7 +104,7 @@ def upload_db(path_csv:str, engine):
 
     # Using pandas to read csv
     ##df = pd.read_csv(f'clean_data/alquileres_clean{date_formatted}.csv')
-    df = pd.read_csv(f'clean_data/{path_csv}.csv')
+    df = pd.read_csv(path_csv)
 
     df.rename(columns={'Unnamed: 0': 'id'}, inplace=True)
 
