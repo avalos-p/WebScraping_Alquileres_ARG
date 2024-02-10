@@ -25,9 +25,9 @@ class SpideralquileresSpider_PI(scrapy.Spider):
         for house in houses:
             yield{
                 'name' : house.css('h4.title::text').get(),
-                'price': house.xpath('.//span[@class="price "]/text()[3]').get(),
+                'price': house.xpath('.//span[@class="price "]/text()[3]').get().replace('.', ';'),
                 'days': house.css('div.price-sub::text').get(),
-                'rooms': house.css('ul.list-inline.amenities li::text').re_first(r'\d+'),
+                'rooms': house.css('ul.list-inline.amenities li::text').re_first(r'\d+').replace('.', ';'),
                 'bathrooms': house.css('ul.list-inline.amenities li::text').re_first(r'\d+\s*Bañ[os]'),
                 'capacity': house.css('ul.list-inline.amenities li::text').re_first(r'\d+\s*Persona[s]'),
                 'date': date_formatted,
